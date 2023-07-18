@@ -1,0 +1,73 @@
+[0m15:15:34.467330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb174463b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb1754d8940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb1754ff6a0>]}
+
+
+============================== 15:15:34.473695 | 700585e6-8422-42e7-8fae-b5cf2deb6699 ==============================
+[0m15:15:34.473695 [info ] [MainThread]: Running with dbt=1.5.3
+[0m15:15:34.474555 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/Users/pkosanam/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:15:34.475271 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/Users/pkosanam/.dbt')}
+[0m15:15:34.475774 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m15:15:34.477404 [error] [MainThread]: Encountered an error:
+1
+[0m15:15:34.479092 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/pkosanam/opt/anaconda3/envs/test_ml/lib/python3.9/site-packages/dbt/cli/requires.py", line 86, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/Users/pkosanam/opt/anaconda3/envs/test_ml/lib/python3.9/site-packages/dbt/cli/requires.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/pkosanam/opt/anaconda3/envs/test_ml/lib/python3.9/site-packages/dbt/cli/main.py", line 459, in init
+    results = task.run()
+  File "/Users/pkosanam/opt/anaconda3/envs/test_ml/lib/python3.9/site-packages/dbt/task/init.py", line 287, in run
+    sys.exit(1)
+SystemExit: 1
+
+[0m15:15:34.480157 [debug] [MainThread]: Command `dbt init` failed at 15:15:34.479955 after 0.05 seconds
+[0m15:15:34.480656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb174463b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb1754d8b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb1754d8a60>]}
+[0m15:15:34.481174 [debug] [MainThread]: Flushing usage events
+[0m15:16:15.358438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f793b455f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f793c6ab9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f793c6be730>]}
+
+
+============================== 15:16:15.365229 | 0877f37f-1977-4c31-9a06-f0211633aae5 ==============================
+[0m15:16:15.365229 [info ] [MainThread]: Running with dbt=1.5.3
+[0m15:16:15.366167 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/Users/pkosanam/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:16:15.368062 [error] [MainThread]: Encountered an error:
+1
+[0m15:16:15.370327 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/pkosanam/opt/anaconda3/envs/test_ml/lib/python3.9/site-packages/dbt/cli/requires.py", line 86, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/Users/pkosanam/opt/anaconda3/envs/test_ml/lib/python3.9/site-packages/dbt/cli/requires.py", line 71, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/pkosanam/opt/anaconda3/envs/test_ml/lib/python3.9/site-packages/dbt/cli/main.py", line 459, in init
+    results = task.run()
+  File "/Users/pkosanam/opt/anaconda3/envs/test_ml/lib/python3.9/site-packages/dbt/task/init.py", line 287, in run
+    sys.exit(1)
+SystemExit: 1
+
+[0m15:16:15.371652 [debug] [MainThread]: Command `dbt init` failed at 15:16:15.371432 after 0.05 seconds
+[0m15:16:15.372253 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f793b455f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f793c6ab9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f793c6abaf0>]}
+[0m15:16:15.372818 [debug] [MainThread]: Flushing usage events
+[0m15:25:25.533406 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa2c2c389a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa2c3dac940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa2c3dd26a0>]}
+
+
+============================== 15:25:25.540321 | 4b1a3577-45d0-474c-969b-0fcf27b36b6b ==============================
+[0m15:25:25.540321 [info ] [MainThread]: Running with dbt=1.5.3
+[0m15:25:25.541138 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/pkosanam/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:25:46.563009 [debug] [MainThread]: Starter project path: /Users/pkosanam/opt/anaconda3/envs/test_ml/lib/python3.9/site-packages/dbt/include/starter_project
+[0m15:26:03.175585 [info ] [MainThread]: Profile dbt_app_1 written to /Users/pkosanam/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m15:26:03.176324 [info ] [MainThread]: 
+Your new dbt project "dbt_app_1" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:26:03.177206 [debug] [MainThread]: Command `dbt init` succeeded at 15:26:03.177071 after 37.68 seconds
+[0m15:26:03.177528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa2c2c389a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa2bdfaabb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa2bdfaab80>]}
+[0m15:26:03.177869 [debug] [MainThread]: Flushing usage events
